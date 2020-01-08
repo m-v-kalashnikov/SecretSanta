@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+from local_settings import *
 from django.urls import reverse_lazy
 import os
 
@@ -21,10 +21,10 @@ LOGIN_REDIRECT_URL = reverse_lazy('gift_exchange:index')
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'wxbu=in%_4^l^9(gl%(y9go!a)znhorbadlxb!g!7@%_jyx2e%') # TODO before deployment: set in heroku variable
+SECRET_KEY = os.environ.get('SECRET_KEY', SecretKey)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', True)) # TODO before deployment: set in heroku variable
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', Debug))
 
 ALLOWED_HOSTS = ['*']
 
@@ -99,12 +99,18 @@ WSGI_APPLICATION = 'SecretSanta.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+if DEBUG:
+    DATABASES = Databases
+else:
+    import dj_database_url
+
+    DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
