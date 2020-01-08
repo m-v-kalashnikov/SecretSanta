@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-from local_settings import *
 from django.urls import reverse_lazy
 import os
 
@@ -20,11 +19,14 @@ LOGIN_REDIRECT_URL = reverse_lazy('gift_exchange:index')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
+
+if DEBUG:
+    from local_settings import *
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', SecretKey)
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', Debug))
 
 ALLOWED_HOSTS = ['*']
 
