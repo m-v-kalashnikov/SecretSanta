@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53247ac1-22c1-4e96-967b-1c1f14b9105f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SecretSanta/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecretSanta/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +208,7 @@
       <workItem from="1578138863971" duration="1143000" />
       <workItem from="1578140055254" duration="46455000" />
       <workItem from="1578225205760" duration="31998000" />
-      <workItem from="1578313213978" duration="105117000" />
+      <workItem from="1578313213978" duration="105682000" />
     </task>
     <servers />
   </component>
@@ -285,10 +285,10 @@
     </state>
     <state x="477" y="281" key="com.intellij.ide.util.TipDialog/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578313341227" />
     <state x="477" y="281" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1578138869229" />
-    <state x="353" y="60" width="611" height="804" key="find.popup" timestamp="1578213643729">
+    <state x="353" y="60" width="611" height="804" key="find.popup" timestamp="1578526691126">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="353" y="60" width="611" height="804" key="find.popup/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578213643729" />
+    <state x="353" y="60" width="611" height="804" key="find.popup/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578526691126" />
     <state x="510" y="97" key="refactoring.ChangeSignatureDialog" timestamp="1578251647504">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
