@@ -1,0 +1,24 @@
+{% extends "main_base.html" %}
+{% load static %}
+{% load gift_exchange_extras %}
+{% block pure_title %}Secret Santa|"Шапки" в которых я участвую{% endblock %}
+{% block content %}
+    {% for gift_exchange in my_gift_exchange_list %}
+        <div class="col-12 col-md-6 col-xl-3">
+            <a class="p-0 nav-link nav-item" href="{% url 'gift_exchange:gift_exchange_link' gift_exchange.slug %}">
+                <div class="card bg-cover" style="min-height: 240px; background-image: url({{ gift_exchange.get_absolute_image_url }});">
+                    <div class="card-img-overlay card-img-overlay-hover align-items-center bg-white-90">
+                        <div class="text-center">
+                            <p class="font-weight-bold">
+                                <p class="mb-0">{{ gift_exchange }}</p>
+                                <p class="text-muted">{{ gift_exchange.description|symbols_max }}</p>
+                                <span class="text-muted">Ценовой диапазон: {{gift_exchange.price_start}} - {{gift_exchange.price_limit}}$</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h5>{{gift_exchange.title}}</h5>
+            </a>
+        </div>
+    {% endfor %}
+{% endblock %}

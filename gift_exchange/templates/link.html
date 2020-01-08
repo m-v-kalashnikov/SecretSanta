@@ -1,0 +1,73 @@
+{% extends "main_base.html" %}
+{% load static %}
+{% load gift_exchange_extras %}
+{% block pure_title %}Secret Santa|Моя карточка{% endblock %}
+{% block content %}
+    <article class="pt-7 justify-content-center">
+    {% if giftexchange.the_draw_was%}
+        <header class="container justify-content-center">
+            <div class="row">
+                {% for Gift_data in giftexchange.gift_set.values %}
+                    {% if Gift_data.user_id == user.id %}
+                        {% for User_data in User %}
+                            {% if Gift_data.to_whom_id == User_data.pk %}
+                                <div class="col-12">
+                                    <h3 class="mb-3 text-center"><span class="text-capitalize">{{ user }}</span> вы дарите подарок этому учаснику:</h3>
+                                    <h4 class="text-danger text-capitalize text-center">{{ User_data }}</h4>
+                                    <h6 >Вот что-бы он хотел:</h6>
+                                    {% for Gift_data in giftexchange.gift_set.values %}
+                                        {% if Gift_data.user_id == User_data.id %}
+                                            <p class="font-size-lg text-gray-500">{{ Gift_data.description }}</p>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        <div class="row justify-content-center pt-10">
+                            <div class="col-12 col-md-10 font-size-lg text-gray-500">
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </header>
+    {% else %}
+        <header class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+
+                    <!-- Heading -->
+                    <h3 class="mb-3">{{ object.title|capfirst }}</h3>
+
+                    <!-- Subheading -->
+                    <p id="myCopy" class="text-muted">
+                        create-gift-profile/{{ object.slug }} {#TODO before deployment: set host#}
+                    </p>
+                    <button class="btn btn-outline-dark" onclick="myFunction()">Скопировать ссылку</button>
+                    <div class="mt-3">
+                        {% if user == giftexchange.created_by and giftexchange.max_adorable_date|can_draw %}
+                            <form method="post">
+                                {% csrf_token %}
+                                <button class="btn btn-outline-danger" type="submit">Провести жеребьёвку</button>
+                            </form>
+                            <h6 class="mt-2">Кол-во учасников: {{ Gift_exchange_participants|length }}</h6>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="pt-10">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 font-size-lg text-gray-500">
+                        <p>{{ giftexchange.description }}</p>
+                        <p>Подарок должен быть в пределах сумы {{ giftexchange.price_start }} - {{ giftexchange.price_limit }}$.</p>
+                        <p>Информация о том кому вам дарить будет доступна после {{ giftexchange.max_adorable_date }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
+    </article>
+    <script type="text/javascript" src="{% static '/assets/js/link_copier.js' %}"></script>
+{% endblock %}

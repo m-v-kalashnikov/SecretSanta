@@ -1,0 +1,19 @@
+{% extends "main_base.html" %}
+{% load static %}
+{% block pure_title %}Secret Santa|Создать карточку "шапки"{% endblock %}
+{% block content %}
+    <div class="mb-7 ml-6 mt-6">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h3>Создайте свою карточку</h3>
+            <table class="table table-sm table-hover table-lg">
+                {{ form.as_table }}
+            </table>
+            <input type="submit" value="Сохранить">
+        </form>
+        <h5 class="mt-10">{{ GiftExchange.title }}</h5>
+        <p>{{ GiftExchange.description }}</p>
+        <p>Желанный подарок должен быть в пределах {{ GiftExchange.price_start }} - {{ GiftExchange.price_limit }}$</p>
+        <p>Жеребьёвка состоится после {{ GiftExchange.max_adorable_date }}</p>
+    </div>
+{% endblock %}

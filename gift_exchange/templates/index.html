@@ -1,0 +1,21 @@
+{% extends "main_base.html" %}
+{% load static %}
+{% block pure_title %}Secret Santa|Создать "шапку"{% endblock %}
+{% block content %}
+    <div class="mb-7 ml-6 mt-6">
+
+        {% if username %}
+            <h1 class="mb-6">Здравствуйте, {{ username }}!</h1>
+        {% else %}
+            <h1 class="mb-6">Здравствуйте, по всей видимости вы у нас впервые.</h1>
+        {% endif %}
+        <p>Это сервис по созданию уникального, тематического обмена подарками.</p>
+        {% if username %}
+            <p>Для создания "шапки"(так мы называем обмен подарками) нажмите на "Cоздать «Шапку»" слева на панели.</p>
+            <p class="mt-12">Тут Вы можете <a href="{% url 'gift_exchange:logout' %}">выйти</a>.</p>
+        {% else %}
+            <p>Для создания "шапки" (так мы называем обмен подарками) залогинтесь и нажмите на "Cоздать «Шапку»" слева на панели.</p>
+            <p class="mt-12">Вам нужно <a href="{% url 'gift_exchange:login' %}">войти</a> на сайт!</p>
+        {% endif %}
+    </div>
+{% endblock %}

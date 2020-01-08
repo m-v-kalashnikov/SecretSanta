@@ -1,0 +1,28 @@
+{% extends "main_base.html" %}
+{% load static %}
+{% load gift_exchange_extras %}
+{% block pure_title %}Secret Santa|Все "шапки"{% endblock %}
+{% block content %}
+    {% for hat in object_list %}
+        <div class="col-12 col-md-6 col-xl-3">
+            {% if hat.participant_set.values_list|if_in_somewhere_is_something:user.id %}
+                <a class="p-0 nav-link nav-item" href="{% url 'gift_exchange:gift_exchange_link' hat.slug %}">
+            {% else %}
+                <a class="p-0 nav-link nav-item" href="{% url 'gift_exchange:create_gift_profile' hat.slug %}">
+            {% endif %}
+                <div class="card bg-cover" style="min-height: 240px; background-image: url({{ hat.get_absolute_image_url }});">
+                    <div class="card-img-overlay card-img-overlay-hover align-items-center bg-white-90">
+                        <div class="text-center">
+                            <p class="font-weight-bold">
+                                <p class="mb-0">{{ hat }}</p>
+                                <p class="text-muted">{{ hat.description|symbols_max }}</p>
+                                <span class="text-muted">Ценовой диапазон: {{hat.price_start}} - {{hat.price_limit}}$</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h5>{{hat.title}}</h5>
+            </a>
+        </div>
+    {% endfor %}
+{% endblock %}

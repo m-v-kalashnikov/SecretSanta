@@ -1,0 +1,46 @@
+{% extends "../base.html" %}
+
+{% load static %}
+{% block pure_title %}{% block head_title %}{% endblock %}{% endblock %}
+{% block main_content %}
+{#  CONTENT #}
+    <div class="container-fluid">
+        <div class="row no-gutters">
+{#            ASIDE NAVBAR#}
+            <div class="col-12 col-lg-auto"  style="background-color: antiquewhite;">
+                <nav class="navbar navbar-expand-lg navbar-vertical navbar-light sticky-left px-lg-4 @@classList">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="{% url 'gift_exchange:index' %}">Secret Santa</a>
+                                <!-- Toggler -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSidenavLeftCollapse" aria-controls="navbarSidenavLeftCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Collapse -->
+                        <div class="collapse navbar-collapse" id="navbarSidenavLeftCollapse">
+                            <ul class="navbar-nav font-size-lg mb-6 my-lg-10" id="sidenavParent">
+                                {% if user.is_authenticated %}
+                                <li class="nav-item"><a class="nav-link" href="{% url 'gift_exchange:create_hat' %}">Cоздать «Шапку»</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'gift_exchange:hats_i_member_in' %}">"Шапки" в которых я участвую</a></li>
+                                {% endif %}
+                                <li class="nav-item"><a class="nav-link" href="{% url 'gift_exchange:all_hats' %}">Все "Шапки"</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+{#            MAIN#}
+            <div class="col-12 col-lg">
+                <section class="pb-12">
+                    <div class="row">
+                        <div class="mb-7 ml-8 mt-6">
+                            {% block content %}
+
+                            {% endblock %}
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}
