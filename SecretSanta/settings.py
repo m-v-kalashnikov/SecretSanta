@@ -24,7 +24,7 @@ LOGIN_REDIRECT_URL = reverse_lazy('gift_exchange:index')
 SECRET_KEY = os.environ.get('SECRET_KEY', 'SecretKey')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get("DJANGO_DEBUG"))
+DEBUG = bool(os.environ.get(DJANGO_DEBUG))
 
 ALLOWED_HOSTS = ['*']
 

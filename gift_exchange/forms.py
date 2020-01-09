@@ -5,7 +5,7 @@ from gift_exchange.models import GiftExchange, Gift, Participant
 class GiftExchangeForm(forms.ModelForm):
     class Meta:
         model = GiftExchange
-        fields = ['title', 'slug', 'description', 'price_start', 'price_limit', 'max_adorable_date', 'image']
+        fields = ['title', 'slug', 'description', 'price_start', 'price_limit', 'max_adorable_date']
 
 
 class ParticipantForm(forms.ModelForm):

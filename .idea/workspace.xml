@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53247ac1-22c1-4e96-967b-1c1f14b9105f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gift_exchange/migrations/0039_auto_20200109_1708.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/facebook/js/fbconnect.ce85e4f1e7d7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/facebook/js/fbconnect.ce85e4f1e7d7.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/facebook/js/fbconnect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/facebook/js/fbconnect.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/snippets/provider_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/socialaccount/snippets/provider_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecretSanta/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecretSanta/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gift_exchange/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/gift_exchange/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gift_exchange/migrations/0030_auto_20200106_1504.py" beforeDir="false" afterPath="$PROJECT_DIR$/gift_exchange/migrations/0030_auto_20200106_1504.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gift_exchange/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gift_exchange/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/media/media/img/0000/00/00/gifts-0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +229,7 @@
       <workItem from="1578138863971" duration="1143000" />
       <workItem from="1578140055254" duration="46455000" />
       <workItem from="1578225205760" duration="31998000" />
-      <workItem from="1578313213978" duration="116298000" />
+      <workItem from="1578313213978" duration="118696000" />
     </task>
     <servers />
   </component>
@@ -254,25 +273,25 @@
     </state>
     <state x="548" y="208" key="FileChooserDialogImpl/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578574978017" />
     <state x="548" y="208" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1578139875883" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1578575895906">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1578581736967">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578575895906" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578581736967" />
     <state width="1493" height="196" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578140019712" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1578575895906">
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1578581736966">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578575895906" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578581736966" />
     <state width="1493" height="196" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1578140019712" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1578575895905">
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1578581736966">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578575895905" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578581736966" />
     <state width="1493" height="196" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1578140019712" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1578575895906">
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1578581736966">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578575895906" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578581736966" />
     <state width="1493" height="196" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578140019712" />
     <state x="544" y="152" key="SettingsEditor" timestamp="1578575122622">
       <screen x="0" y="40" width="1536" height="824" />
@@ -300,9 +319,9 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="361" y="112" key="scopes/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578521410035" />
-    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1578243293614">
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1578580979181">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578243293614" />
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578580979181" />
   </component>
 </project>

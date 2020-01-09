@@ -3,6 +3,7 @@ from django.conf import settings
 from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
+import random
 
 
 class Participant(models.Model):
@@ -33,7 +34,8 @@ class GiftExchange(models.Model):
                               upload_to='media/img/%Y/%m/%d',
                               null=True,
                               blank=True,
-                              default="media/img/0000/00/00/gifts.jpg"
+                              # i know its handbrake, but it's made only for heroku
+                              default="media/img/0000/00/00/gifts-{}.jpg".format(random.randint(0, 9))
                               )
     created_by = models.ForeignKey(User,
                                    null=True,

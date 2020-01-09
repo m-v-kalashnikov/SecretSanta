@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='giftexchange',
             name='image',
-            field=models.ImageField(blank=True, default='media/img/0000/00/00/gifts.jpg', null=True, upload_to='media/img/%Y/%m/%d', verbose_name='Картинка для вида'),
+            field=models.ImageField(blank=True, default='media/img/0000/00/00/gifts-0.jpg', null=True, upload_to='media/img/%Y/%m/%d', verbose_name='Картинка для вида'),
         ),
     ]
