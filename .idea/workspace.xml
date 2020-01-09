@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53247ac1-22c1-4e96-967b-1c1f14b9105f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/authentication_error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/connections.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/login_cancelled.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/messages/account_connected.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/messages/account_connected_other.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/messages/account_connected_updated.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/messages/account_disconnected.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/snippets/login_extra.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/socialaccount/snippets/provider_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecretSanta/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecretSanta/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/socialaccount/snippets/provider_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/socialaccount/snippets/provider_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +126,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="http.certificates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -222,7 +208,7 @@
       <workItem from="1578138863971" duration="1143000" />
       <workItem from="1578140055254" duration="46455000" />
       <workItem from="1578225205760" duration="31998000" />
-      <workItem from="1578313213978" duration="111731000" />
+      <workItem from="1578313213978" duration="112494000" />
     </task>
     <servers />
   </component>
@@ -261,10 +247,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="770" y="271" key="EnvironmentVariablesDialog/0.40.1536.824@0.40.1536.824" timestamp="1578139200601" />
-    <state x="548" y="208" key="FileChooserDialogImpl" timestamp="1578573259051">
+    <state x="548" y="208" key="FileChooserDialogImpl" timestamp="1578574978017">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="548" y="208" key="FileChooserDialogImpl/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578573259051" />
+    <state x="548" y="208" key="FileChooserDialogImpl/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578574978017" />
     <state x="548" y="208" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1578139875883" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1578573674443">
       <screen x="0" y="40" width="1536" height="824" />
@@ -286,10 +272,10 @@
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578573674442" />
     <state width="1493" height="196" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578140019712" />
-    <state x="544" y="152" key="SettingsEditor" timestamp="1578573671593">
+    <state x="544" y="152" key="SettingsEditor" timestamp="1578575122622">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="544" y="152" key="SettingsEditor/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578573671593" />
+    <state x="544" y="152" key="SettingsEditor/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578575122622" />
     <state x="544" y="152" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1578139201660" />
     <state x="93" y="133" width="1350" height="634" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578517933349">
       <screen x="0" y="40" width="1536" height="824" />
