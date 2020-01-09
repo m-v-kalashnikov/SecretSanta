@@ -58,6 +58,8 @@ EMAIL_HOST_USER = os.environ.get('Email_user', 'Email_user')
 EMAIL_HOST_PASSWORD = os.environ.get('Email_password', 'Email_password')
 EMAIL_PORT = '587'
 
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
