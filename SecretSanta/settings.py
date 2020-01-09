@@ -20,11 +20,11 @@ LOGIN_REDIRECT_URL = reverse_lazy('gift_exchange:index')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', "SecretKey")
+SECRET_KEY = os.environ.get('SECRET_KEY', 'SecretKey')
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = bool(os.environ.get("DJANGO_DEBUG"))
 
 ALLOWED_HOSTS = ['*']
 
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     # ... include the providers you want to enable:
     'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.facebook',
 ]
 
 SITE_ID = 1
@@ -98,13 +99,6 @@ WSGI_APPLICATION = 'SecretSanta.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
 
 # DATABASES = {
 #     'default': {

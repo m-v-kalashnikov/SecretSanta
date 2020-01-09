@@ -4,7 +4,23 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53247ac1-22c1-4e96-967b-1c1f14b9105f" name="Default Changelist" comment="" />
+    <list default="true" id="53247ac1-22c1-4e96-967b-1c1f14b9105f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/authentication_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/connections.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/login_cancelled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/messages/account_connected.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/messages/account_connected_other.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/messages/account_connected_updated.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/messages/account_disconnected.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/snippets/login_extra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/socialaccount/snippets/provider_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecretSanta/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecretSanta/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,21 +137,21 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kalas\Desktop\Full-stack_Python_courses\Project\Secret_Santa\SecretSanta\gift_exchange\templatetags" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kalas\Desktop\Full-stack_Python_courses\Project\Secret_Santa\SecretSanta\templates" />
       <recent name="C:\Users\kalas\Desktop\Full-stack_Python_courses\Project\Secret_Santa\SecretSanta" />
       <recent name="C:\Users\kalas\Desktop\Full-stack_Python_courses\Project\Secret_Santa\SecretSanta\staticfiles\media\media\img\0000\00\00" />
       <recent name="C:\Users\kalas\Desktop\Full-stack_Python_courses\Project\Secret_Santa\SecretSanta\staticfiles\media\media\img" />
       <recent name="C:\Users\kalas\Desktop\Full-stack_Python_courses\Project\Secret_Santa\SecretSanta\gift_exchange\templates" />
-      <recent name="C:\Users\kalas\Desktop\Full-stack_Python_courses\Project\Secret_Santa\SecretSanta\static\assets\img\default" />
     </key>
   </component>
   <component name="RunManager">
@@ -180,7 +196,7 @@
     <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,SHOW_INHERITED" />
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\kalas\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -206,7 +222,7 @@
       <workItem from="1578138863971" duration="1143000" />
       <workItem from="1578140055254" duration="46455000" />
       <workItem from="1578225205760" duration="31998000" />
-      <workItem from="1578313213978" duration="106068000" />
+      <workItem from="1578313213978" duration="111731000" />
     </task>
     <servers />
   </component>
@@ -245,34 +261,35 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="770" y="271" key="EnvironmentVariablesDialog/0.40.1536.824@0.40.1536.824" timestamp="1578139200601" />
-    <state x="548" y="208" key="FileChooserDialogImpl" timestamp="1578520484311">
+    <state x="548" y="208" key="FileChooserDialogImpl" timestamp="1578573259051">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="548" y="208" key="FileChooserDialogImpl/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578520484311" />
+    <state x="548" y="208" key="FileChooserDialogImpl/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578573259051" />
     <state x="548" y="208" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1578139875883" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1578517445195">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1578573674443">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578517445195" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578573674443" />
     <state width="1493" height="196" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1578140019712" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1578517445194">
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1578573674442">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578517445194" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578573674442" />
     <state width="1493" height="196" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1578140019712" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1578517445194">
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1578573674442">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578517445194" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578573674442" />
     <state width="1493" height="196" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1578140019712" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1578517445195">
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1578573674442">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578517445195" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578573674442" />
     <state width="1493" height="196" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1578140019712" />
-    <state x="544" y="152" key="SettingsEditor" timestamp="1578139201660">
+    <state x="544" y="152" key="SettingsEditor" timestamp="1578573671593">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
+    <state x="544" y="152" key="SettingsEditor/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578573671593" />
     <state x="544" y="152" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1578139201660" />
     <state x="93" y="133" width="1350" height="634" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578517933349">
       <screen x="0" y="40" width="1536" height="824" />
@@ -283,10 +300,10 @@
     </state>
     <state x="477" y="281" key="com.intellij.ide.util.TipDialog/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578313341227" />
     <state x="477" y="281" key="com.intellij.ide.util.TipDialog/0.40.1536.824@0.40.1536.824" timestamp="1578138869229" />
-    <state x="353" y="60" width="611" height="804" key="find.popup" timestamp="1578526691126">
+    <state x="353" y="60" width="611" height="804" key="find.popup" timestamp="1578527988795">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="353" y="60" width="611" height="804" key="find.popup/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578526691126" />
+    <state x="353" y="60" width="611" height="804" key="find.popup/0.40.1536.824/-1920.0.1920.1040@0.40.1536.824" timestamp="1578527988795" />
     <state x="510" y="97" key="refactoring.ChangeSignatureDialog" timestamp="1578251647504">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
