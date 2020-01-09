@@ -54,7 +54,7 @@ class Link(DetailView):
         current_gift_exchange.the_draw_was = True
         current_gift_exchange.save()
         massage = 'Зайдите к нам на сайт' \
-                  '(https://vast-headland-94854.herokuapp.com/hats-i-member-in/)' \
+                  ' https://vast-headland-94854.herokuapp.com/hats-i-member-in/ ' \
                   'и посмотрите свою пару по событию "{}".'.format(current_gift_exchange)
 
         for user in object_list_of_participants:
