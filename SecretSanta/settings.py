@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 LOGIN_REDIRECT_URL = reverse_lazy('gift_exchange:index')
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'SecretKey')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = bool(os.environ.get('DJANGO_DEBUG'))
 
@@ -35,8 +35,8 @@ ACCOUNT_EMAIL_REQUIRED = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = os.environ.get('Email_user', 'Email_user')
-EMAIL_HOST_PASSWORD = os.environ.get('Email_password', 'Email_password')
+EMAIL_HOST_USER = os.environ.get('Email_user')
+EMAIL_HOST_PASSWORD = os.environ.get('Email_password')
 EMAIL_PORT = '587'
 
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'

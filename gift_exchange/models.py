@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
 import random
+from django.utils import timezone
 
 
 class Participant(models.Model):
@@ -59,10 +60,7 @@ class GiftExchange(models.Model):
                                        default=False
                                        )
     creation_date = models.DateTimeField('Дата создания',
-                                         auto_now=False,
-                                         auto_now_add=True,
-                                         null=True,
-                                         blank=True,
+                                         default=timezone.now,
                                          )
 
     class Meta:
