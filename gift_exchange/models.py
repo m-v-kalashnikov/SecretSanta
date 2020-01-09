@@ -24,11 +24,24 @@ class Participant(models.Model):
 
 
 class GiftExchange(models.Model):
-    title = models.CharField('Название вашего обмена', max_length=50)
-    slug = models.SlugField('Url адрес обмена', max_length=100, unique=True)
+    title = models.CharField('Название вашего обмена',
+                             max_length=50
+                             )
+    slug = models.SlugField('Url адрес обмена',
+                            max_length=100,
+                            unique=True
+                            )
     description: str = models.TextField('Описание')
-    price_start = models.PositiveSmallIntegerField('Минимальная стоимость подарка', blank=True, null=True, default=0)
-    price_limit = models.PositiveSmallIntegerField('Максимальная  стоимость подарка', blank=True, null=True, default=10)
+    price_start = models.PositiveSmallIntegerField('Минимальная стоимость подарка',
+                                                   blank=True,
+                                                   null=True,
+                                                   default=0
+                                                   )
+    price_limit = models.PositiveSmallIntegerField('Максимальная  стоимость подарка',
+                                                   blank=True,
+                                                   null=True,
+                                                   default=10
+                                                   )
     max_adorable_date = models.DateTimeField('Дата до которой можно подключится')
     image = models.ImageField('Картинка для вида',
                               upload_to='media/img/%Y/%m/%d',
@@ -42,7 +55,15 @@ class GiftExchange(models.Model):
                                    blank=True,
                                    on_delete=models.SET_NULL
                                    )
-    the_draw_was = models.BooleanField('Была ли жеребьевка', default=False)
+    the_draw_was = models.BooleanField('Была ли жеребьевка',
+                                       default=False
+                                       )
+    creation_date = models.DateTimeField('Дата создания',
+                                         auto_now=False,
+                                         auto_now_add=True,
+                                         null=True,
+                                         blank=True,
+                                         )
 
     class Meta:
         verbose_name = 'Обмен подарками'
