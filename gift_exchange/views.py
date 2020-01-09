@@ -115,6 +115,7 @@ class MyGiftExchangeList(ListView):
     context_object_name = "my_gift_exchange_list"
     paginate_by = 10
     template_name = 'hats_i_member_in_list.html'
+    ordering = ['-date_created']
 
     def get_queryset(self):
         _user = self.request.user
