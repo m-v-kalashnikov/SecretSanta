@@ -53,11 +53,15 @@ class Link(DetailView):
         current_gift_exchange = self.model.objects.get(slug__exact=self.request.path.split('/')[1])
         current_gift_exchange.the_draw_was = True
         current_gift_exchange.save()
+        massage = 'Зайдите к нам на сайт' \
+                  '(https://vast-headland-94854.herokuapp.com/hats-i-member-in/)' \
+                  'и посмотрите свою пару по событию "{}".'.format(current_gift_exchange)
 
         for user in object_list_of_participants:
+            from SecretSanta.settings import EMAIL_HOST_USER
             send_mail('Secret Santa',
-                      'Зайдите к нам на сайт и посмотрите свою пару по событию "{}".'.format(current_gift_exchange),
-                      'saw2mvrforever@gmail.com',
+                      massage,
+                      EMAIL_HOST_USER,
                       [user.user.email],
                       fail_silently=False,
                       )

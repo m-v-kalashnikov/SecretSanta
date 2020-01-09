@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53247ac1-22c1-4e96-967b-1c1f14b9105f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gift_exchange/migrations/0045_auto_20200109_2308.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gift_exchange/migrations/0046_auto_20200109_2311.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gift_exchange/migrations/0047_auto_20200109_2321.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gift_exchange/migrations/0048_auto_20200109_2321.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecretSanta/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecretSanta/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gift_exchange/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gift_exchange/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gift_exchange/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gift_exchange/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +209,7 @@
       <workItem from="1578138863971" duration="1143000" />
       <workItem from="1578140055254" duration="46455000" />
       <workItem from="1578225205760" duration="31998000" />
-      <workItem from="1578313213978" duration="129896000" />
+      <workItem from="1578313213978" duration="131565000" />
     </task>
     <servers />
   </component>
