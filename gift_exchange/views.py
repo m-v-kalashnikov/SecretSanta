@@ -104,7 +104,7 @@ class GiftExchangeList(ListView):
     model = GiftExchange
     paginate_by = 10
     template_name = 'hat_list.html'
-    ordering = ['-date_created']
+    ordering = ['-creation_date']
 
     def get_queryset(self):
         return GiftExchange.objects.filter(the_draw_was=False)
@@ -115,7 +115,7 @@ class MyGiftExchangeList(ListView):
     context_object_name = "my_gift_exchange_list"
     paginate_by = 10
     template_name = 'hats_i_member_in_list.html'
-    ordering = ['-date_created']
+    ordering = ['-creation_date']
 
     def get_queryset(self):
         _user = self.request.user
