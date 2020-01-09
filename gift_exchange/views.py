@@ -104,6 +104,7 @@ class GiftExchangeList(ListView):
     model = GiftExchange
     paginate_by = 10
     template_name = 'hat_list.html'
+    ordering = ['-date_created']
 
     def get_queryset(self):
         return GiftExchange.objects.filter(the_draw_was=False)
