@@ -8,7 +8,7 @@ LOGIN_REDIRECT_URL = reverse_lazy('gift_exchange:index')
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-DEBUG = bool(os.environ.get('DJANGO_DEBUG'))
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
